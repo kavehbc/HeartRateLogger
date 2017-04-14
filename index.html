@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>Heart Rate</title>
+	<link rel="stylesheet"  href="lib/tau/wearable/theme/default/tau.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+	<div class="ui-page ui-page-active" id="main">
+		<header class="ui-header">
+			<h2 class="ui-title">Heart Rate</h2>
+		</header>
+		<div class="ui-content content-padding">
+			<ul class="ui-listview">
+				<p id="htmlHR">-- bpm</p>
+			</ul>
+			<ul class="ui-listview">
+				<p id="htmlHRV">-- ms</p>
+			</ul>
+			
+			<footer class="ui-grid-col-2 ui-footer">
+				<button type="button" class="ui-btn" id="btnStart" onclick="btnStart_Click();">Start</button>
+				<button type="button" class="ui-btn" id="btnStop" onclick="btnStop_Click();" disabled="disabled">Stop</button>
+			</footer>
+	
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+<!-- load javascript file for your application -->
+<script src="js/file.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lowBatteryCheck.js"></script>
+</html>
